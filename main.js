@@ -14,7 +14,7 @@ function displayAnime(animes) {
 
     animes.forEach(anime => {
         const card = document.createElement('div');
-        card.className = 'anime-card';
+        card.className = 'anime-card scroll-reveal';
         card.innerHTML = `
             <img src="${anime.thumbnail}" alt="${anime.name}">
             <h3>${anime.name}</h3>
@@ -23,6 +23,9 @@ function displayAnime(animes) {
             window.location.href = `details.html?id=${anime.id}`;
         };
         container.appendChild(card);
+        if (window.scrollObserver) {
+            window.scrollObserver.observe(card);
+        }
     });
 }
 
@@ -118,6 +121,24 @@ function loadAnimeDetails() {
     `;
 }
 
+// --- Scroll Reveal Logic ---
+function initScrollReveal() {
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    window.scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, observerOptions);
+
+    const revealElements = document.querySelectorAll('.scroll-reveal');
+    revealElements.forEach(el => window.scrollObserver.observe(el));
+}
+
 // Initialization based on page
 document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('anime-container')) {
@@ -126,4 +147,5 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('details-container')) {
         loadAnimeDetails();
     }
+    initScrollReveal();
 });
