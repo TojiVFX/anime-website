@@ -59,5 +59,20 @@ const animeData = [
         downloadLinks: [
             { episode: 1, link: "https://example.com/download/clannad-ep1" }
         ]
+    },
+    {
+        id: "demon-slayer",
+        name: "Demon Slayer",
+        releaseYear: 2019,
+        duration: "24m",
+        episodes: 26,
+        genres: ["Action", "Adventure", "Fantasy"],
+        language: "Japanese",
+        description: "A family is attacked by demons and only two members survive: Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.",
+        thumbnail: "https://i.ibb.co/23DKwYvB/IMG-20260130-120524-448.jpg",
+        category: "action",
+        downloadLinks: [
+            { episode: 1, link: "https://example.com/download/demon-slayer-ep1" }
+        ]
     }
 ];
