@@ -74,5 +74,80 @@ const animeData = [
         downloadLinks: [
             { episode: 1, link: "https://example.com/download/demon-slayer-ep1" }
         ]
+    },
+    {
+        id: "attack-on-titan",
+        name: "Attack on Titan",
+        releaseYear: 2013,
+        duration: "24m",
+        episodes: 75,
+        genres: ["Action", "Dark Fantasy", "Post-apocalyptic"],
+        language: "Japanese",
+        description: "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
+        thumbnail: "https://i.ibb.co/23DKwYvB/IMG-20260130-120524-448.jpg",
+        category: "action",
+        downloadLinks: [
+            { episode: 1, link: "https://example.com/download/aot-ep1" }
+        ]
+    },
+    {
+        id: "death-note",
+        name: "Death Note",
+        releaseYear: 2006,
+        duration: "24m",
+        episodes: 37,
+        genres: ["Psychological", "Supernatural", "Thriller"],
+        language: "Japanese",
+        description: "An intelligent high school student goes on a secret crusade to eliminate criminals from the world after discovering a notebook capable of killing anyone whose name is written into it.",
+        thumbnail: "https://i.ibb.co/23DKwYvB/IMG-20260130-120524-448.jpg",
+        category: "action",
+        downloadLinks: [
+            { episode: 1, link: "https://example.com/download/death-note-ep1" }
+        ]
+    },
+    {
+        id: "my-hero-academia",
+        name: "My Hero Academia",
+        releaseYear: 2016,
+        duration: "24m",
+        episodes: 113,
+        genres: ["Action", "Adventure", "Superhero"],
+        language: "Japanese",
+        description: "In a world where most people have superpowers, a boy born without them still dreams of becoming a superhero.",
+        thumbnail: "https://i.ibb.co/23DKwYvB/IMG-20260130-120524-448.jpg",
+        category: "action",
+        downloadLinks: [
+            { episode: 1, link: "https://example.com/download/mha-ep1" }
+        ]
+    },
+    {
+        id: "spirited-away",
+        name: "Spirited Away",
+        releaseYear: 2001,
+        duration: "2h 5m",
+        episodes: 1,
+        genres: ["Adventure", "Family", "Fantasy"],
+        language: "Japanese",
+        description: "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.",
+        thumbnail: "https://i.ibb.co/23DKwYvB/IMG-20260130-120524-448.jpg",
+        category: "adventure",
+        downloadLinks: [
+            { episode: 1, link: "https://example.com/download/spirited-away" }
+        ]
+    },
+    {
+        id: "jujutsu-kaisen",
+        name: "Jujutsu Kaisen",
+        releaseYear: 2020,
+        duration: "24m",
+        episodes: 24,
+        genres: ["Action", "Supernatural", "Dark Fantasy"],
+        language: "Japanese",
+        description: "A boy swallows a cursed talisman - the finger of a demon - and becomes cursed himself. He enters a shaman's school to be able to locate the demon's other body parts and thus exorcise himself.",
+        thumbnail: "https://i.ibb.co/23DKwYvB/IMG-20260130-120524-448.jpg",
+        category: "action",
+        downloadLinks: [
+            { episode: 1, link: "https://example.com/download/jjk-ep1" }
+        ]
     }
 ];
