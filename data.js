@@ -54,7 +54,7 @@ const animeData = [
         genres: ["Romance", "Drama", "Slice of Life"],
         language: "Japanese",
         description: "A high school student who cares little about school or others meets a girl who has been held back a year due to illness, and decides to help her revive the school's drama club.",
-        thumbnail: "https://via.placeholder.com/300x450?text=Clannad",
+        thumbnail: "https://i.ibb.co/23DKwYvB/300x450?text=Clannad",
         category: "romance",
         downloadLinks: [
             { episode: 1, link: "https://example.com/download/clannad-ep1" }
