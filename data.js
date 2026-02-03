@@ -69,7 +69,7 @@ const animeData = [
         genres: ["Action", "Adventure", "Fantasy"],
         language: "Japanese",
         description: "A family is attacked by demons and only two members survive: Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.",
-        thumbnail: "https://i.ibb.co/23DKwYvB/IMG-20260130-120524-448.jpg",
+        thumbnail: "https://i.ibb.co/CsK4vgKY/Demon-Slayer-Kimetsu-no-Yaiba-Infinity-Castle-2025-Movie-Hindi-Dubbed-Download-HD-990x556.jpg",
         category: "action",
         downloadLinks: [
             { episode: 1, link: "https://example.com/download/demon-slayer-ep1" }
