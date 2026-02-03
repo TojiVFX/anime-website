@@ -8,7 +8,7 @@ const animeData = [
         genres: ["Romance", "Drama", "Supernatural"],
         language: "Japanese",
         description: "Two strangers find themselves linked in a bizarre way. When a connection forms, will distance be the only thing to keep them apart?",
-        thumbnail: "https://via.placeholder.com/300x450?text=Your+Name",
+        thumbnail: "https://i.ibb.co/23DKwYvB/IMG-20260130-120524-448.jpg",
         category: "romance",
         downloadLinks: [
             { episode: 1, link: "https://example.com/download/your-name-ep1" }
@@ -23,7 +23,7 @@ const animeData = [
         genres: ["Action", "Adventure", "Fantasy"],
         language: "Japanese",
         description: "Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the village's leader and strongest ninja.",
-        thumbnail: "https://via.placeholder.com/300x450?text=Naruto",
+        thumbnail: "https://i.ibb.co/23DKwYvB/IMG-20260130-120524-448.jpg",
         category: "action",
         downloadLinks: [
             { episode: 1, link: "https://example.com/download/naruto-ep1" },
@@ -39,7 +39,7 @@ const animeData = [
         genres: ["Action", "Adventure", "Fantasy"],
         language: "Japanese",
         description: "Follows the adventures of Monkey D. Luffy and his pirate crew in order to find the greatest treasure ever left by the legendary Pirate, Gold Roger. The famous mystery treasure named \"One Piece\".",
-        thumbnail: "https://via.placeholder.com/300x450?text=One+Piece",
+        thumbnail: "https://i.ibb.co/23DKwYvB/IMG-20260130-120524-448.jpg",
         category: "adventure",
         downloadLinks: [
             { episode: 1, link: "https://example.com/download/one-piece-ep1" }
@@ -54,7 +54,7 @@ const animeData = [
         genres: ["Romance", "Drama", "Slice of Life"],
         language: "Japanese",
         description: "A high school student who cares little about school or others meets a girl who has been held back a year due to illness, and decides to help her revive the school's drama club.",
-        thumbnail: "https://via.placeholder.com/300x450?text=Clannad",
+        thumbnail: "https://i.ibb.co/23DKwYvB/IMG-20260130-120524-448.jpg",
         category: "romance",
         downloadLinks: [
             { episode: 1, link: "https://example.com/download/clannad-ep1" }
