@@ -3,26 +3,12 @@
 // --- Home Page Logic ---
 function displayAnime(animes) {
     const container = document.getElementById('anime-container');
-    const resultInfo = document.getElementById('result-info');
     if (!container) return;
 
     container.innerHTML = '';
 
-    if (resultInfo) {
-        if (animes.length === animeData.length) {
-            resultInfo.innerHTML = `Showing all <span class="result-count">${animes.length}</span> animes`;
-        } else {
-            resultInfo.innerHTML = `Found <span class="result-count">${animes.length}</span> animes`;
-        }
-    }
-
     if (animes.length === 0) {
-        container.innerHTML = `
-            <div class="no-results-container">
-                <p class="no-results">Sorry, this anime is not available on our website.</p>
-                <button class="reset-btn" onclick="resetFilters()">Reset All Filters</button>
-            </div>
-        `;
+        container.innerHTML = '<p class="no-results">Sorry, this anime is not available on our website.</p>';
         return;
     }
 
@@ -38,21 +24,6 @@ function displayAnime(animes) {
         };
         container.appendChild(card);
     });
-}
-
-function resetFilters() {
-    const searchBox = document.getElementById('search-box');
-    const categoryBtns = document.querySelectorAll('.category-btn');
-
-    if (searchBox) searchBox.value = '';
-    categoryBtns.forEach(btn => {
-        btn.classList.remove('active');
-        if (btn.getAttribute('data-category') === 'all') {
-            btn.classList.add('active');
-        }
-    });
-
-    displayAnime(animeData);
 }
 
 function initHome() {
@@ -166,24 +137,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 header.classList.remove('scrolled');
             }
         });
-    }
-
-    // Back to Top functionality
-    const backToTopBtn = document.getElementById('back-to-top');
-    if (backToTopBtn) {
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                backToTopBtn.classList.add('show');
-            } else {
-                backToTopBtn.classList.remove('show');
-            }
-        });
-
-        backToTopBtn.onclick = () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        };
     }
 });
