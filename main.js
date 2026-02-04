@@ -168,6 +168,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Header Menu Toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const navLinks = document.getElementById('nav-links');
+
+    if (menuBtn && navLinks) {
+        menuBtn.onclick = (e) => {
+            e.stopPropagation();
+            navLinks.classList.toggle('active');
+        };
+
+        document.addEventListener('click', (e) => {
+            if (!menuBtn.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+    }
+
     // Back to Top functionality
     const backToTopBtn = document.getElementById('back-to-top');
     if (backToTopBtn) {
