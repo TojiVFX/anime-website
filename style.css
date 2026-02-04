@@ -515,6 +515,10 @@ footer {
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
+    .top-branding {
+        display: none;
+    }
+
     header {
         padding: 1rem;
     }
@@ -601,8 +605,22 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        padding: 2rem 1rem;
+    }
+
     .hero-content h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+    }
+
+    .anime-card h3 {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .anime-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     #search-box {
