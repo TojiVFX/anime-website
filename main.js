@@ -147,6 +147,39 @@ function loadAnimeDetails() {
     `;
 }
 
+// --- About Page Logic ---
+function initAbout() {
+    const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+
+    if (contactForm && formStatus) {
+        contactForm.onsubmit = (e) => {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // In a real application, you would send this data to a server
+            console.log('Form Submitted:', { name, email, message });
+
+            // Show success message
+            formStatus.textContent = 'Thank you for your message! We will get back to you soon.';
+            formStatus.className = 'form-status success';
+            formStatus.style.display = 'block';
+
+            // Reset form
+            contactForm.reset();
+
+            // Clear message after 5 seconds
+            setTimeout(() => {
+                formStatus.style.display = 'none';
+            }, 5000);
+        };
+    }
+}
+
 // Initialization based on page
 document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('anime-container')) {
@@ -154,6 +187,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (document.getElementById('details-container')) {
         loadAnimeDetails();
+    }
+    if (document.getElementById('contact-form')) {
+        initAbout();
     }
 
     // Header scroll effect

@@ -657,3 +657,118 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* About Page Styles */
+.about-section, .contact-section {
+    padding: 60px 1rem;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section h1, .contact-section h2 {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.about-section p, .contact-section p {
+    color: #bbb;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+}
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2.5rem 0;
+}
+
+.contact-method {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    border: 1px solid #222;
+    transition: transform 0.3s;
+}
+
+.contact-method:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.contact-method .icon {
+    font-size: 2rem;
+}
+
+.method-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.method-info p {
+    margin: 0.3rem 0 0;
+}
+
+.method-info a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.contact-form-container {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid #222;
+    margin-top: 3rem;
+}
+
+.contact-form-container h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background: #121212;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: white;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.form-status {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    display: none;
+}
+
+.form-status.success {
+    display: block;
+    background: rgba(0, 255, 0, 0.1);
+    color: #4caf50;
+    border: 1px solid #4caf50;
+}
+
+.form-status.error {
+    display: block;
+    background: rgba(255, 0, 0, 0.1);
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
